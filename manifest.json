@@ -1,0 +1,22 @@
+{
+    "name": "Asslem Xiaomi",
+    "short_name": "xiaomi",
+    "start_url": "/?source=pwa",
+    "display": "standalone",
+    "theme_color": "#fff",
+    "background_color": "#fff",
+    "icons": [
+        {
+            "src":"logo.png",
+            "sizes":"200x200",
+            "type":"image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src":"logo.png",
+            "sizes":"200x200",
+            "type":"image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

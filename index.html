@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site de xiaomi ...">
+    <meta name="keywords" content="téléphone,xiaomi,nouveau,france">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="icon" type="image/x-icon" href="logo4.png">
+    <meta name="theme-color" content="#fff" />
+    <title>Asslem-Najjar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script>
+    window.addEventListener('load', () => {
+        if("serviceWorker" in navigator){
+            navigator.serviceWorker.register('sw.js');
+        }
+    })
+</script>
+</head>
+<body>
+    <audio src="" id="my_audio" loop="loop"></audio>
+    <header class="header">
+        <nav>
+            <input class="menu-btn" type="checkbox" id="menu-btn" onclick="blurfocus(),audio();"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="navicon"></span>
+            </label>
+            <ul class="menu">
+                <li class="nav-item"><a href="#" class="a2">XIAOMI FRANCE</a> </li>
+                <li class="nav-item"><a href="#" class="a2">MI COMMUNITY</a></li>
+                <li class="nav-item"><a href="#" class="a2">MAGADIN DE DETAIL</a></li>
+                <li class="nav-item"><a href="#" class="a2">TELECHARGER L'APPLICATION MI STORE</a></li>
+                <li class="nav-item"><a href="#" class="a2">SE CONNECTER</a></li>
+                <li class="nav-item"><a href="#" class="a2">S'INSCRIRE</a></li>
+                <li class="nav-item"><a href="#" class="a2">PANIER (0)</a></li>
+            </ul>
+        </nav>
+    <div class="container">
+        <div class="slider">
+            <img src="bannerPC.jpg" class="active" >
+            <img src="K11R-PC-12.1.jpg" alt="image de xiaomi 11 T">
+            <img src="PC_Banner_12.6.jpg" >
+            <img src="redmi-note-10-pro-PC.jpg" >
+            <i class="fas fa-angle-left" id="right" onclick="audio1();" ></i>
+            <i class="fas fa-angle-right" id="left" onclick="audio1();" ></i>
+        </div>
+            <div class="darck-mode" >
+                <i class="fas fa-moon" id="moon" onclick="darck(),audio3();"></i>
+                <i class="fas fa-sun" id="sun" onclick="white(),audio3();"></i>
+            </div>
+            <div class="divlogo" onmouseenter="audio4()" onmouseleave="audio4()">
+                <img src="https://i01.appmifile.com/webfile/globalimg/pandora/mi-logo.svg" alt="logo de xiaomi" class="logo">
+            </div>
+    </div>
+    </header>
+    <br>
+    <main class="main">
+        <section class="triple_produit">
+            <div >
+                <img src="k19d-2.jpg" alt="redmi 10" class="produit1">
+            </div>
+            <div >
+                <img src="Lark20210924-172511.png" alt="xiaomi 11 lite 5G NE" class="produit1">
+            </div>
+            <div >
+                <img src="PC-guagngao.jpg" alt="xiaomi 11T Pro 5G" class="produit1">
+            </div>
+        </section>
+        <br>
+        <div >
+            <img src="reprise-pc-1226.png" alt="" class="banniere_reprise" >
+        </div>
+        <h3> PRODUITS PHARES</h3>
+        <section class="new-produit">
+            <div class="camera-container">
+                <div class="camera1">
+                    <img src="left-10.19.jpg" alt="" class="tesswira1">
+                </div>
+                <div class="camera2">
+                    <img src="PC-2k-pro.jpg" alt="" class="tesswira1">
+                </div>
+                <div class="camera3">
+                    <img src="picture.jpg" alt="" class="tesswira1">
+                </div>
+                <div class="camera4">
+                    <img src="tele.jpg" alt="" class="tesswira1">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h6 class="footer-elements">Copyright © 2010 - 2021 Xiaomi. All Rights Reserved</h6>
+        <a href=""class="footer-links">Paramètres des cookies</a>
+        <a href="" class="footer-links"> Politique de Cookies</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
